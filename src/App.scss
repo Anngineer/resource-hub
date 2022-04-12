@@ -57,10 +57,10 @@
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 1rem;
 }
-// .card {
-//   border: 2px gray solid;
-//   background-color: rgb(53, 63, 71);
-// }
+p.blurb {
+  text-align: left;
+}
+
 .ui.card,
 .ui.card:last-child,
 .ui.card:first-child {
@@ -74,14 +74,7 @@
     color: rgb(62, 62, 71);
   }
 }
-// .card {
-//   color: rgb(25, 25, 39);
-//   &:hover {
-//     color: rgb(25, 25, 39);
-//   }
-// }
 
-// .BlogCards,
 .ThemeCards {
   padding: 2rem;
   /* border: 2px black solid; */
@@ -101,17 +94,11 @@
   }
 }
 
-// .card,
 .themeCard {
   border: 2px gray solid;
   background-color: rgb(53, 63, 71);
   min-width: 316px;
 }
-// .ui.card,
-// .ui.card:last-child,
-// .ui.card:first-child {
-//   margin: 1rem 0;
-// }
 
 /* Component ThemeCards has themeCard elements */
 @media (max-width: 1359px) {

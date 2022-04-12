@@ -75,6 +75,10 @@
   grid-gap: 1rem;
 }
 
+p.blurb {
+  text-align: left;
+}
+
 .ui.card,
 .ui.card:last-child,
 .ui.card:first-child {

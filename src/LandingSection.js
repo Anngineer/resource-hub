@@ -1,4 +1,6 @@
-import filterByTags from "./filterByTags";
+// import filterByTags from "./filterByTags";
+
+import IAmDropdown from "./IAmDropdown";
 
 const LandingSection = () => {
   // const practiceList = filterByTags(["CSS", "HTML"]);
@@ -10,7 +12,7 @@ const LandingSection = () => {
         An information center for curious adults who have busy lives. Choose an
         option for a suggestion!{" "}
       </p>
-      <p>Dropdown Here</p>
+      <IAmDropdown />
     </div>
   );
 };

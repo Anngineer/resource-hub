@@ -15,7 +15,7 @@ const BlogCards = ({ blogList }) => {
             <Card.Header className="blog-header">{book.title}</Card.Header>
           </Card.Content>
           <Card.Content>
-            <p>{book.blurb}</p>
+            <p className="blurb">{book.blurb}</p>
             <p>
               <b>Tags:</b> {book.tags.join(", ")}
             </p>

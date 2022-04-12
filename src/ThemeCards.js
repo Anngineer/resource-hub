@@ -29,10 +29,10 @@ const ThemeCards = ({ themeTags }) => {
           to={`/blogs/${book.key}`}
         >
           <Card.Content>
-            <Card.Header className="book-eader">{book.title}</Card.Header>
+            <Card.Header className="book-header">{book.title}</Card.Header>
           </Card.Content>
           <Card.Content>
-            <p>{book.blurb}</p>
+            <p className="blurb">{book.blurb}</p>
             <p>
               <b>Tags:</b> {book.tags.join(", ")}
             </p>
