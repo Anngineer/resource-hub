@@ -31,14 +31,15 @@ function ModalForm(props) {
         <Form.Group className="formGroup" floated="right">
           {modalEmail}
           <p> Sign up to recieve new blog posts!</p>
-
-          <Form.Input
-            placeholder="Email"
-            onKeyPress={(e) => handleKeyPress(e)}
-            onChange={(e, data) => handleFormChange(e, data)}
-            style={{ marginBottom: "1rem" }}
-          />
-          <Form.Button content="Submit" onClick={handleFormSubmit} />
+          <div className="modal-form-container">
+            <Form.Input
+              placeholder="Email"
+              onKeyPress={(e) => handleKeyPress(e)}
+              onChange={(e, data) => handleFormChange(e, data)}
+              style={{ marginBottom: "1rem", marginRight: "1rem" }}
+            />
+            <Form.Button content="Submit" onClick={handleFormSubmit} />
+          </div>
         </Form.Group>
       </div>
     );
