@@ -19,9 +19,13 @@ function ModalCard(props) {
       <Card.Content extra as={Link} to={`/blogs/${dropDownTheme}`}>
         {/* <Icon name="angle right" /> */}
         {dropDownTheme === "design-and-scripting" && (
-          <p>
-            Or see more Design and Scripting blogs <Icon name="angle right" />
-          </p>
+          <>
+            <p>Or see more Design and Scripting blogs </p>
+            <div class="flex">
+              {" "}
+              <Icon name="angle right" />
+            </div>
+          </>
         )}
         {dropDownTheme === "programming" && (
           <p>
