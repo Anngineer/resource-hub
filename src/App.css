@@ -13,26 +13,32 @@
 
 html,
 body {
-  color: #080f0b;
+  background-color: #f6f8f8;
+  color: #112225;
   font-size: 1rem;
   font-family: "Source Sans Pro", sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
-  background-color: #dde9e7;
 }
 
 .App {
   min-height: 100vh;
 }
 
+h1,
+h2,
+h3 {
+  color: #113d46;
+}
+
 .landing-section {
-  background-color: #dde9e7;
-  background-image: url("./images/background3.png"), url("./images/clouds.png");
-  background-repeat: no-repeat, no-repeat;
-  background-position: right bottom 40px, left top;
-  background-size: 500px 500px, cover;
+  background-image: url("./images/background3.png"), url("./images/clouds.png"), -webkit-gradient(linear, left top, left bottom, from(#dde9e7), to(#f6f8f8));
+  background-image: url("./images/background3.png"), url("./images/clouds.png"), linear-gradient(#dde9e7, #f6f8f8);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: right bottom 40px, left top, left top;
+  background-size: 500px 500px, cover, cover;
   position: relative;
   min-height: 580px;
   height: 100vh;
@@ -42,21 +48,21 @@ body {
 
 @media (max-width: 500px) {
   .landing-section {
-    background-position: right bottom, left top;
+    background-position: right bottom, left top, left top;
   }
 }
 
 @media (min-width: 1000px) {
   .landing-section {
-    background-size: 750px 500px, cover;
-    background-position: right bottom 30px, left top;
+    background-size: 750px 500px, cover, cover;
+    background-position: right bottom 30px, left top, left top;
   }
 }
 
 .border {
   background-color: none;
   border-radius: 6px;
-  border: #0d1c0b solid 2px;
+  border: #112225 solid 2px;
   height: 88%;
   width: 90%;
   margin: auto;
@@ -160,7 +166,8 @@ body {
 }
 
 .search-section {
-  margin: 1rem;
+  padding: 1rem;
+  width: 100%;
 }
 
 .search-section h3 {
@@ -174,6 +181,12 @@ body {
   padding: 0;
   background-color: #323d44;
   max-width: 400px;
+}
+
+.description-word {
+  display: inline;
+  color: #989b9e;
+  font-size: 1.1rem;
 }
 
 .form {
@@ -211,12 +224,10 @@ body {
 
 .resource-section {
   min-height: 600px;
-  padding-right: 1rem;
-  padding-left: 1rem;
 }
 
 .resource-section h3 {
-  margin-top: 1.5rem;
+  padding-top: 1.5rem;
 }
 
 @media (max-width: 380px) {
@@ -243,6 +254,14 @@ body {
   -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 1rem;
+}
+
+.ui.card > .content.card-header,
+.ui.cards > .card > .content.card-header,
+.ui.card > .content > .header,
+.ui.cards > .card > .content > .header {
+  background: #283043;
+  color: whitesmoke;
 }
 
 p.blurb {

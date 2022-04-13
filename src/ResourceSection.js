@@ -11,10 +11,13 @@ const ResourceSection = ({ blogList, formValue }) => {
         <ThemeGroupedCards
           themeName={"Design & Scripting"}
           themeTags={["CSS", "HTML", "Design"]}
+          background={"#F9f9f9"}
+          // background={"#f6f8f8"}
         />
         <ThemeGroupedCards
           themeName={"Programming"}
           themeTags={["Beginner Javascript", "Intermediate Javascript"]}
+          background={"#ffffff"}
         />
         <ThemeGroupedCards
           themeName={"Math & Physics"}
@@ -24,10 +27,13 @@ const ResourceSection = ({ blogList, formValue }) => {
             "Statics",
             "Kinematics",
           ]}
+          background={"#F9f9f9"}
+          // background={"#f6f8f8"}
         />
         <ThemeGroupedCards
           themeName={"Organizational Tips"}
           themeTags={["Focus", "Project Organization", "Time Management"]}
+          background={"#ffffff"}
         />
       </div>
     );

@@ -11,7 +11,13 @@
 html,
 body {
   // background-color: #080a21;
-  color: #080f0b;
+  // background-color: #edf3f2;
+  // background-color: #f6f8f8;
+  // background-color: #fafafa;
+  background-color: #f6f8f8;
+
+  // color: #080f0b;
+  color: #112225;
   // color: #323d44;
 
   font-size: 1rem;
@@ -20,7 +26,7 @@ body {
 
   margin-left: auto;
   margin-right: auto;
-  background-color: #dde9e7;
+  // background-color: #dde9e7;
 }
 
 .App {
@@ -32,16 +38,24 @@ body {
 
 // Home Page
 // ------------------------------------
+h1,
+h2,
+h3 {
+  color: #113d46;
+}
 
 // Intro Landing Section of the Home Page
 
 .landing-section {
   //  height: 600px;
-  background-color: #dde9e7;
-  background-image: url("./images/background3.png"), url("./images/clouds.png");
-  background-repeat: no-repeat, no-repeat;
-  background-position: right bottom 40px, left top;
-  background-size: 500px 500px, cover;
+  // background-color: #dde9e7;
+  // background-color: linear-gradient(#dde9e7, #edf3f2);
+
+  background-image: url("./images/background3.png"), url("./images/clouds.png"),
+    linear-gradient(#dde9e7, #f6f8f8);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: right bottom 40px, left top, left top;
+  background-size: 500px 500px, cover, cover;
 
   position: relative;
   min-height: 580px;
@@ -57,14 +71,14 @@ body {
 
 @media (max-width: 500px) {
   .landing-section {
-    background-position: right bottom, left top;
+    background-position: right bottom, left top, left top;
   }
 }
 
 @media (min-width: 1000px) {
   .landing-section {
-    background-size: 750px 500px, cover;
-    background-position: right bottom 30px, left top;
+    background-size: 750px 500px, cover, cover;
+    background-position: right bottom 30px, left top, left top;
   }
 }
 
@@ -72,7 +86,9 @@ body {
   // display: absolute;
   background-color: none;
   border-radius: 6px;
-  border: #0d1c0b solid 2px;
+  // border: #0d1c0b solid 2px;
+  border: #112225 solid 2px;
+
   height: 88%;
   width: 90%;
   margin: auto;
@@ -147,10 +163,13 @@ body {
 
 // The Search section with the checkboxes
 .search-section {
-  margin: 1rem;
+  padding: 1rem;
   h3 {
     text-align: left;
   }
+  // background-color: ;
+  // background: linear-gradient(#dde9e7, #edf3f2);
+  width: 100%;
 }
 .filter-underline {
   height: 1px;
@@ -159,6 +178,11 @@ body {
   padding: 0;
   background-color: #323d44;
   max-width: 400px;
+}
+.description-word {
+  display: inline;
+  color: #989b9e;
+  font-size: 1.1rem;
 }
 // The form that contains all of the checkboxes
 .form {
@@ -181,10 +205,10 @@ body {
 // The Resource Section with cards
 .resource-section {
   min-height: 600px;
-  padding-right: 1rem;
-  padding-left: 1rem;
+  // padding-right: 1rem;
+  // padding-left: 1rem;
   h3 {
-    margin-top: 1.5rem;
+    padding-top: 1.5rem;
   }
 }
 
@@ -211,6 +235,15 @@ body {
   justify-items: center;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 1rem;
+}
+// .card-header,
+// div.header.blog-header
+.ui.card > .content.card-header,
+.ui.cards > .card > .content.card-header,
+.ui.card > .content > .header,
+.ui.cards > .card > .content > .header {
+  background: #283043;
+  color: whitesmoke;
 }
 p.blurb {
   text-align: left;

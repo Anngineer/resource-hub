@@ -6,9 +6,12 @@ import { Link } from "react-router-dom";
 
 function ModalCard(props) {
   const dropDownValue = props.dropDownValue;
+  // const tagList = dropDownValue.split(", ");
   const dropDownTheme = props.dropDownTheme;
 
   const themeBlogList = filterByTags(dropDownValue);
+  // const themeBlogList = filterByTags(tagList);
+
   const randomIndex = Math.floor(Math.random() * themeBlogList.length);
   console.log(randomIndex, themeBlogList[randomIndex]);
   const chosenBlog = themeBlogList[randomIndex];

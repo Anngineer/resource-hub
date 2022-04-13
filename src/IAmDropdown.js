@@ -10,37 +10,32 @@ function IAmDropdown() {
     {
       key: "programming",
       text: "looking to learn programming.",
-      value: {
-        tags: ["Beginner Javascript", "Intermediate Javascript"],
-        theme: "programming",
-      },
+      value: "programming, Beginner Javascript, Intermediate Javascript",
     },
     {
       key: "design-and-scripting",
       text: "a fan of art and design.",
-      value: { tags: ["HTML", "CSS", "Design"], theme: "design-and-scripting" },
+      value: "design-and-scripting, HTML, CSS, Design",
     },
     {
       key: "math-and-physics",
       text: "keen on science and math.",
-      value: {
-        tags: ["Thermodynamics", "Fluid Dynamics", "Statics", "Kinematics"],
-        theme: "math-and-physics",
-      },
+      value:
+        "math-and-physics, Thermodynamics, Fluid Dynamics, Statics, Kinematics",
     },
     {
       key: "organizational-tips",
       text: "a bit chaotic!",
-      value: {
-        tags: ["Focus", "Project Organization", "Time Management"],
-        theme: "organizational-tips",
-      },
+      value:
+        "organizational-tips, Focus, Project Organization, Time Management",
     },
   ];
   function handleDropDownSelect(event, data) {
     console.log(data.value);
-    setDropDownValue(data.value.tags);
-    setDropDownTheme(data.value.theme);
+    let dataArray = data.value.split(", ");
+    const theme = dataArray.shift(1);
+    setDropDownValue(dataArray);
+    setDropDownTheme(theme);
     handleOpenDisplayModel();
   }
 

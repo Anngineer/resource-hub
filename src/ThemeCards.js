@@ -28,7 +28,7 @@ const ThemeCards = ({ themeTags }) => {
           as={Link}
           to={`/blogs/${book.key}`}
         >
-          <Card.Content>
+          <Card.Content className="card-header">
             <Card.Header className="book-header">{book.title}</Card.Header>
           </Card.Content>
           <Card.Content>

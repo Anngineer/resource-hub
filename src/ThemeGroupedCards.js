@@ -2,10 +2,13 @@ import { Link } from "react-router-dom";
 // import filterByTags from "./filterByTags";
 import ThemeCards from "./ThemeCards";
 
-const ThemeGroupedCards = ({ themeName, themeTags }) => {
+const ThemeGroupedCards = ({ themeName, themeTags, background }) => {
   // let practiceList = filterByTags(themeTags);
   return (
-    <div>
+    <div
+      className="themed-grouped-cards"
+      style={{ backgroundColor: `${background}` }}
+    >
       <h3 style={{ marginTop: "2rem" }}>{themeName}</h3>
       <p>Tags are: {themeTags.join(", ")}</p>
       <ThemeCards themeTags={themeTags} />

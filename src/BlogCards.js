@@ -11,7 +11,7 @@ const BlogCards = ({ blogList }) => {
           as={Link}
           to={`/blogs/${book.key}`}
         >
-          <Card.Content>
+          <Card.Content className="card-header">
             <Card.Header className="blog-header">{book.title}</Card.Header>
           </Card.Content>
           <Card.Content>

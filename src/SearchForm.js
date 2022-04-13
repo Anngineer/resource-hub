@@ -74,7 +74,8 @@ const SearchForm = ({ setBlogList, setFormValue, formValue }) => {
       <h2>Resources</h2>
 
       <h3 onClick={() => handleForm()}>
-        Filter Blogs by Topic{" "}
+        Filter Blogs
+        <div className="description-word"> by Topic</div>{" "}
         {formHidden && (
           <>
             <Button
