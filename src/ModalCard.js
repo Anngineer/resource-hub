@@ -13,39 +13,53 @@ function ModalCard(props) {
   console.log(randomIndex, themeBlogList[randomIndex]);
   const chosenBlog = themeBlogList[randomIndex];
   return (
-    <Card as={Link} to={`/blogs/${chosenBlog.key}`}>
-      <Card.Content header={chosenBlog.title} />
-      <Card.Content description={chosenBlog.blurb} />
-      <Card.Content extra as={Link} to={`/blogs/${dropDownTheme}`}>
-        {/* <Icon name="angle right" /> */}
-        {dropDownTheme === "design-and-scripting" && (
-          <>
-            <p>Or see more Design and Scripting blogs </p>
-            <div class="flex">
-              {" "}
-              <Icon name="angle right" />
-            </div>
-          </>
-        )}
-        {dropDownTheme === "programming" && (
-          <p>
-            Or see more Programming blogs <Icon name="angle right" />
-          </p>
-        )}
-        {dropDownTheme === "math-and-physics" && (
-          <p>
-            Or see more Math and Physics blogs
-            <Icon name="angle right" />
-          </p>
-        )}
-        {dropDownTheme === "organizational-tips" && (
-          <p>
-            Or see more Organizational Tips blogs
-            <Icon name="angle right" />
-          </p>
-        )}
-      </Card.Content>
-    </Card>
+    <>
+      <Card as={Link} to={`/blogs/${chosenBlog.key}`}>
+        <Card.Content header={chosenBlog.title} />
+        <Card.Content
+          description={
+            <>
+              {chosenBlog.blurb}
+              <Icon name="caret right" />
+            </>
+          }
+        />
+      </Card>
+      <Card as={Link} to={`/blogs/${dropDownTheme}`}>
+        <Card.Content extra>
+          {/* <Icon name="caret right" /> */}
+          {dropDownTheme === "design-and-scripting" && (
+            <>
+              <p>
+                Or see more Design and Scripting blogs{" "}
+                <Icon name="caret right" />{" "}
+              </p>
+              {/* <div class="flex">
+                {" "}
+                <Icon name="caret right" />
+              </div> */}
+            </>
+          )}
+          {dropDownTheme === "programming" && (
+            <p>
+              Or see more Programming blogs <Icon name="caret right" />
+            </p>
+          )}
+          {dropDownTheme === "math-and-physics" && (
+            <p>
+              Or see more Math and Physics blogs
+              <Icon name="caret right" />
+            </p>
+          )}
+          {dropDownTheme === "organizational-tips" && (
+            <p>
+              Or see more Organizational Tips blogs
+              <Icon name="caret right" />
+            </p>
+          )}
+        </Card.Content>
+      </Card>
+    </>
   );
 }
 export default ModalCard;

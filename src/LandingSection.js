@@ -7,7 +7,7 @@ const LandingSection = () => {
   // const practiceList = filterByTags(["CSS", "HTML"]);
   return (
     <div className="landing-section">
-      <div class="border">
+      <div className="border">
         <HomeNavBar />
         <div className="intro-block">
           <h1>Resource Hub</h1>

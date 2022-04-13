@@ -12,12 +12,15 @@ html,
 body {
   // background-color: #080a21;
   color: #080f0b;
+  // color: #323d44;
+
   font-size: 1rem;
   font-family: "Source Sans Pro", sans-serif;
   box-sizing: border-box;
 
   margin-left: auto;
   margin-right: auto;
+  background-color: #dde9e7;
 }
 
 .App {
@@ -50,6 +53,19 @@ body {
   // justify-content: center;
   // padding-bottom: 1rem;
   padding-top: 2.2rem;
+}
+
+@media (max-width: 500px) {
+  .landing-section {
+    background-position: right bottom, left top;
+  }
+}
+
+@media (min-width: 1000px) {
+  .landing-section {
+    background-size: 750px 500px, cover;
+    background-position: right bottom 30px, left top;
+  }
 }
 
 .border {
@@ -91,6 +107,28 @@ body {
   }
 }
 
+@media (min-width: 480px) and (max-width: 900px) {
+  .intro-block {
+    width: 350px;
+  }
+}
+
+@media (max-width: 760px) {
+  .intro-block {
+    background: rgba(245, 245, 245, 0.698);
+    // margin-left: auto;
+  }
+}
+@media (max-width: 480px) {
+  .intro-block {
+    width: 90%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    // margin-top: 3rem;
+    background: rgba(245, 245, 245, 0.781);
+  }
+}
+
 // Modal in landing section
 
 .modal-form-container {
@@ -113,6 +151,14 @@ body {
   h3 {
     text-align: left;
   }
+}
+.filter-underline {
+  height: 1px;
+  display: block;
+  margin: 0;
+  padding: 0;
+  background-color: #323d44;
+  max-width: 400px;
 }
 // The form that contains all of the checkboxes
 .form {
@@ -137,6 +183,26 @@ body {
   min-height: 600px;
   padding-right: 1rem;
   padding-left: 1rem;
+  h3 {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (max-width: 380px) {
+  div.ThemeCards {
+    padding: 0;
+  }
+  a.ui.card.themeCard,
+  .themeCard,
+  .ui.card,
+  .ui.cards,
+  .ui.cards > .card {
+    // max-width: 50% !important;
+    width: 80%;
+    min-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .blog-cards {

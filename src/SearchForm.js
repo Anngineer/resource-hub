@@ -2,10 +2,16 @@ import { Form } from "semantic-ui-react";
 import { Checkbox } from "semantic-ui-react";
 import backend from "./backend";
 import createTags from "./createTags";
+import { Button, Icon } from "semantic-ui-react";
+import { useState } from "react";
 
 const SearchForm = ({ setBlogList, setFormValue, formValue }) => {
   const tagList = createTags();
   // console.log("tagList", tagList);
+  const [formHidden, setFormHidden] = useState(true);
+  const handleForm = () => {
+    setFormHidden(!formHidden);
+  };
 
   function handleCheckBoxChange(e, v, tag) {
     // console.log(e);
@@ -65,21 +71,61 @@ const SearchForm = ({ setBlogList, setFormValue, formValue }) => {
 
   return (
     <div className="search-section">
-      <h3>Filter Blogs by Topic</h3>
+      <h2>Resources</h2>
 
-      <Form className="form">
-        {tagList.map((tag) => (
-          <div className="checkbox-item">
-            <Checkbox
-              key={tag}
-              className="checkbox"
-              // label={tag}
-              onChange={(e, v) => handleCheckBoxChange(e, v, tag)}
-            />{" "}
-            {tag}
-          </div>
-        ))}
-      </Form>
+      <h3 onClick={() => handleForm()}>
+        Filter Blogs by Topic{" "}
+        {formHidden && (
+          <>
+            <Button
+              icon
+              // onClick={() => setFormHidden(false)}
+              alt={"Show filter options"}
+              style={{ background: "none", padding: "5px" }}
+            >
+              <Icon name="caret square right outline" />
+            </Button>
+          </>
+        )}
+        {!formHidden && (
+          <>
+            <Button
+              icon
+              // onClick={() => setFormHidden(true)}
+              alt={"Hide filter options"}
+              style={{ background: "none", padding: "5px" }}
+            >
+              <Icon name="caret square down outline" />
+            </Button>
+          </>
+        )}
+        <div
+          className="filter-underline"
+          style={{
+            height: "1px",
+            display: "block",
+            margin: "0",
+            padding: "0",
+            backgroundColor: "#323d44",
+          }}
+        ></div>
+      </h3>
+
+      {!formHidden && (
+        <Form className="form">
+          {tagList.map((tag) => (
+            <div className="checkbox-item">
+              <Checkbox
+                key={tag}
+                className="checkbox"
+                // label={tag}
+                onChange={(e, v) => handleCheckBoxChange(e, v, tag)}
+              />{" "}
+              {tag}
+            </div>
+          ))}
+        </Form>
+      )}
     </div>
   );
 };

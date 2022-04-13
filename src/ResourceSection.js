@@ -6,8 +6,8 @@ const ResourceSection = ({ blogList, formValue }) => {
   if (blogList.length === 0) {
     return (
       <div className="resource-section">
-        <h2>Resource Section</h2>
-        <p>Nothing is checked, so we're showing everything.</p>
+        {/* <h2>Resource Section</h2> */}
+        {/* <p>Nothing is checked, so we're showing everything.</p> */}
         <ThemeGroupedCards
           themeName={"Design & Scripting"}
           themeTags={["CSS", "HTML", "Design"]}
@@ -34,8 +34,9 @@ const ResourceSection = ({ blogList, formValue }) => {
   } else {
     return (
       <div className="resource-section">
-        <h2>Resource Section</h2>
-        <p>The topics checked: {formValue.join(", ")}</p>
+        <h3>Filtered Blogs:</h3>
+        {/* <h2>Resource Section</h2> */}
+        {/* <p>The topics checked: {formValue.join(", ")}</p> */}
         {/* <p>The titles shown: {allTitles}</p> */}
         <BlogCards blogList={blogList} />
       </div>

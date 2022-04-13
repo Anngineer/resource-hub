@@ -5,13 +5,13 @@ const Home = ({ blogList, setBlogList, formValue, setFormValue }) => {
   return (
     <div>
       <LandingSection />
-      <hr />
+      {/* <hr /> */}
       <SearchForm
         setBlogList={setBlogList}
         formValue={formValue}
         setFormValue={setFormValue}
       />
-      <hr />
+      {/* <hr /> */}
       <ResourceSection
         blogList={blogList}
         setBlogList={setBlogList}
