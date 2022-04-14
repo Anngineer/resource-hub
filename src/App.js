@@ -11,11 +11,10 @@ function App() {
   const [formValue, setFormValue] = useState([]);
 
   return (
-    <div
-      className="App"
-      basename={window.location.pathname || "" || `/resource-hub`}
-    >
-      <BrowserRouter>
+    <div className="App">
+      <BrowserRouter
+        basename={window.location.pathname || "" || `/resource-hub`}
+      >
         <ScrollToTop>
           <Routes>
             <Route
