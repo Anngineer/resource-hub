@@ -445,8 +445,16 @@ p.blurb {
 .blog-section h1,
 .blog-section h4 {
   text-align: center;
-  margin-right: 1rem;
-  margin-left: 1rem;
+  margin-right: 3rem;
+  margin-left: 3rem;
+}
+
+@media (max-width: 500px) {
+  .blog-section h1,
+  .blog-section h4 {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
 }
 
 .blog-info-blog-body {
