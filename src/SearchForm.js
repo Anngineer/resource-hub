@@ -71,7 +71,7 @@ const SearchForm = ({ setBlogList, setFormValue, formValue }) => {
 
   return (
     <div className="search-section">
-      <h2>Resources</h2>
+      <h1>Resources</h1>
 
       <h3 onClick={() => handleForm()}>
         Filter Blogs
@@ -86,6 +86,12 @@ const SearchForm = ({ setBlogList, setFormValue, formValue }) => {
             >
               <Icon name="caret square right outline" />
             </Button>
+            <div
+              className="filter-underline"
+              style={{
+                marginBottom: "2rem",
+              }}
+            ></div>
           </>
         )}
         {!formHidden && (
@@ -98,22 +104,13 @@ const SearchForm = ({ setBlogList, setFormValue, formValue }) => {
             >
               <Icon name="caret square down outline" />
             </Button>
+            <div className="filter-underline"></div>
           </>
         )}
-        <div
-          className="filter-underline"
-          style={{
-            height: "1px",
-            display: "block",
-            margin: "0",
-            padding: "0",
-            backgroundColor: "#323d44",
-          }}
-        ></div>
       </h3>
 
       {!formHidden && (
-        <Form className="form">
+        <Form className="search-form">
           {tagList.map((tag) => (
             <div className="checkbox-item">
               <Checkbox

@@ -69,9 +69,16 @@ h3 {
   padding-top: 2.2rem;
 }
 
+@media (max-width: 380px) {
+  .landing-section {
+    background-size: 100vw 300px, cover, cover;
+  }
+}
+
 @media (max-width: 500px) {
   .landing-section {
-    background-position: right bottom, left top, left top;
+    background-position: right bottom 50px, left top, left top;
+    background-size: 400px 400px, cover, cover;
   }
 }
 
@@ -87,7 +94,7 @@ h3 {
   background-color: none;
   border-radius: 6px;
   // border: #0d1c0b solid 2px;
-  border: #112225 solid 2px;
+  border: #11353b solid 4px;
 
   height: 88%;
   width: 90%;
@@ -103,6 +110,12 @@ h3 {
     }
   }
 }
+// @media (max-width: 340px) {
+@media (max-width: 480px) {
+  .border {
+    border: #ffffff00 1px solid;
+  }
+}
 // Intro Block
 .intro-block {
   background: rgba(245, 245, 245, 0.39);
@@ -110,6 +123,7 @@ h3 {
   width: 40%;
   margin-left: 10%;
   padding: 2rem;
+  margin-top: 5.5rem;
   h2 {
     margin: 0;
     margin-bottom: 0.2rem;
@@ -144,6 +158,20 @@ h3 {
     background: rgba(245, 245, 245, 0.781);
   }
 }
+@media (max-width: 380px) {
+  .ui.selection.dropdown {
+    min-width: 60vw;
+  }
+  .intro-block {
+    width: 86vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .landing-section {
+    background-size: 250px 250px, cover, cover;
+    background-position: right bottom 45px, left top, left top;
+  }
+}
 
 // Modal in landing section
 
@@ -164,20 +192,32 @@ h3 {
 // The Search section with the checkboxes
 .search-section {
   padding: 1rem;
+  h1,
+  h2,
   h3 {
     text-align: left;
+    margin: 0;
+    padding-left: 1rem;
   }
   // background-color: ;
   // background: linear-gradient(#dde9e7, #edf3f2);
   width: 100%;
 }
 .filter-underline {
-  height: 1px;
+  height: 2px;
   display: block;
   margin: 0;
   padding: 0;
   background-color: #323d44;
-  max-width: 400px;
+  max-width: 900px;
+  width: 70%;
+  // height: "1px",
+  // display: "block",
+  // margin: "0",
+  // marginBottom: "2rem",
+  // padding: "0",
+  // backgroundcolor: #323d44;
+  border-radius: 6px;
 }
 .description-word {
   display: inline;
@@ -185,10 +225,14 @@ h3 {
   font-size: 1.1rem;
 }
 // The form that contains all of the checkboxes
-.form {
+.search-form {
+  width: 70%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  // background: rgba(245, 245, 245, 0.781);
 }
 .checkbox-item {
   display: flex;
@@ -207,9 +251,24 @@ h3 {
   min-height: 600px;
   // padding-right: 1rem;
   // padding-left: 1rem;
-  h3 {
+  h2 {
     padding-top: 1.5rem;
+    padding-left: 2rem;
+    margin: 0;
   }
+}
+.link-wrapper {
+  width: 100%;
+  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+a.see-more-link {
+  text-decoration: none;
+  display: inline-block;
+  color: #080f0b;
 }
 
 @media (max-width: 380px) {
@@ -230,7 +289,7 @@ h3 {
 }
 
 .blog-cards {
-  border: 2px black solid;
+  // border: 2px black solid;
   display: grid;
   justify-items: center;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -311,3 +370,51 @@ p.blurb {
 
 // -------------------------------------------------------
 //Blog Pages -- Contain the page with blog posts
+
+.blog-info-page,
+.theme-page {
+  background-color: #f6f8f8;
+}
+
+.blog-home-nav {
+  padding: 1rem;
+  a {
+    color: #06424b;
+    font-weight: 700;
+    font-size: 1.4rem;
+  }
+  border-bottom: solid 1px #99a9ac42;
+}
+
+.blog-section {
+  text-align: center;
+  padding-top: 2rem;
+  a {
+    color: #23626b;
+    font-weight: 400;
+    font-size: 1rem;
+    // text-align: center;
+  }
+  h1,
+  h4 {
+    text-align: center;
+  }
+}
+.blog-info-more-link-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  padding: 2rem;
+  padding-right: 4rem;
+}
+
+.theme-page {
+  .theme-page-body {
+    padding: 2rem;
+    padding-bottom: 4rem;
+    h1 {
+      text-align: center;
+      padding: 1.5rem;
+    }
+  }
+}

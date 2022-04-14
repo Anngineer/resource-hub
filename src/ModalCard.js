@@ -18,7 +18,7 @@ function ModalCard(props) {
   return (
     <>
       <Card as={Link} to={`/blogs/${chosenBlog.key}`}>
-        <Card.Content header={chosenBlog.title} />
+        <Card.Content className="card-header" header={chosenBlog.title} />
         <Card.Content
           description={
             <>

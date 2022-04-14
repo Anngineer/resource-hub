@@ -8,7 +8,6 @@ const LandingSection = () => {
   return (
     <div className="landing-section">
       <div className="border">
-        <HomeNavBar />
         <div className="intro-block">
           <h1>Resource Hub</h1>
           <h2>Explore and Learn</h2>
