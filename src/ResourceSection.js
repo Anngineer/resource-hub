@@ -40,11 +40,13 @@ const ResourceSection = ({ blogList, formValue }) => {
   } else {
     return (
       <div className="resource-section">
-        <h3>Filtered Blogs:</h3>
+        {/* <h3>Filtered Blogs:</h3> */}
         {/* <h2>Resource Section</h2> */}
-        {/* <p>The topics checked: {formValue.join(", ")}</p> */}
+        <h2>Showing: {formValue.join(", ")}</h2>
         {/* <p>The titles shown: {allTitles}</p> */}
-        <BlogCards blogList={blogList} />
+        <div className="resource-page-filtered-blogs">
+          <BlogCards blogList={blogList} />
+        </div>
       </div>
     );
   }

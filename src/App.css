@@ -344,8 +344,14 @@ a.see-more-link {
   }
 }
 
+.resource-page-filtered-blogs {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
 @media (min-width: 700px) {
-  div.ThemeCards {
+  div.ThemeCards,
+  .resource-page-filtered-blogs {
     padding-right: 2rem;
     padding-left: 2rem;
   }
