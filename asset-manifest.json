@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Anngineer/resource-hub.git/static/css/main.dea7d931.css",
+    "main.js": "/Anngineer/resource-hub.git/static/js/main.8ab80c84.js",
+    "static/js/787.31382c63.chunk.js": "/Anngineer/resource-hub.git/static/js/787.31382c63.chunk.js",
+    "static/media/background3.png": "/Anngineer/resource-hub.git/static/media/background3.5c05276dd3447c2c2de7.png",
+    "index.html": "/Anngineer/resource-hub.git/index.html",
+    "main.dea7d931.css.map": "/Anngineer/resource-hub.git/static/css/main.dea7d931.css.map",
+    "main.8ab80c84.js.map": "/Anngineer/resource-hub.git/static/js/main.8ab80c84.js.map",
+    "787.31382c63.chunk.js.map": "/Anngineer/resource-hub.git/static/js/787.31382c63.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dea7d931.css",
+    "static/js/main.8ab80c84.js"
+  ]
+}
