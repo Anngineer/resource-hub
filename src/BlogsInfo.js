@@ -22,12 +22,13 @@ const BlogsInfo = () => {
         {/* <div className="blog-picture">Image Here</div> */}
         {/* <p>Preview: {backend[id - 1].blurb}</p> */}
         <p
-          style={{
-            textAlign: "left",
-            width: "70%",
-            marginLeft: "auto",
-            marginRight: "auto",
-          }}
+          className="blog-info-blog-body"
+          // style={{
+          //   textAlign: "left",
+          //   width: "70%",
+          //   marginLeft: "auto",
+          //   marginRight: "auto",
+          // }}
         >
           {backendBody}
         </p>

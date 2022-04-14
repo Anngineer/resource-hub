@@ -8,6 +8,7 @@
 *::after {
   box-sizing: inherit;
 }
+.App,
 html,
 body {
   // background-color: #080a21;
@@ -203,6 +204,12 @@ h3 {
   // background: linear-gradient(#dde9e7, #edf3f2);
   width: 100%;
 }
+@media (min-width: 800px) {
+  .search-section {
+    padding-left: 2rem;
+    padding-bottom: 0;
+  }
+}
 .filter-underline {
   height: 2px;
   display: block;
@@ -257,6 +264,14 @@ h3 {
     margin: 0;
   }
 }
+@media (min-width: 800px) {
+  .resource-section {
+    h2 {
+      padding-left: 3rem;
+      padding-bottom: 0;
+    }
+  }
+}
 .link-wrapper {
   width: 100%;
   display: inline-block;
@@ -285,6 +300,13 @@ a.see-more-link {
     min-width: 200px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media (min-width: 700px) {
+  div.ThemeCards {
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
 }
 
@@ -398,14 +420,40 @@ p.blurb {
   h1,
   h4 {
     text-align: center;
+    margin-right: 1rem;
+    margin-left: 1rem;
   }
 }
+
+.blog-info-blog-body {
+  text-align: left;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 500px) {
+  .blog-info-blog-body {
+    width: 100%;
+    padding: 2rem;
+    padding-top: 1rem;
+    text-align: justify;
+  }
+}
+
 .blog-info-more-link-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: end;
   padding: 2rem;
   padding-right: 4rem;
+  flex-wrap: nowrap;
+}
+@media (max-width: 340px) {
+  .blog-info-more-link-wrapper {
+    a {
+      font-size: 0.9rem;
+    }
+  }
 }
 
 .theme-page {
@@ -416,5 +464,20 @@ p.blurb {
       text-align: center;
       padding: 1.5rem;
     }
+  }
+}
+// --------------------------------------------
+.footer {
+  background: #283043;
+  color: whitesmoke;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 2rem;
+  a {
+    text-decoration: underline;
+    color: rgba(245, 245, 245, 0.89);
   }
 }

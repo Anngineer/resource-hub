@@ -76,6 +76,12 @@ function App() {
           </Routes>
         </ScrollToTop>
       </BrowserRouter>
+      <div className="footer">
+        <p>
+          Webpage designed and developed by{" "}
+          <a href={"https://github.com/Anngineer"}>Anngineer</a>.
+        </p>
+      </div>
     </div>
   );
 }
