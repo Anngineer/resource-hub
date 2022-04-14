@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter
-        basename={window.location.pathname || "" || `/resource-hub`}
+        basename={`/resource-hub` || "" || window.location.pathname}
       >
         <ScrollToTop>
           <Routes>
