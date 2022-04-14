@@ -11,11 +11,9 @@ function App() {
   const [formValue, setFormValue] = useState([]);
 
   return (
-    <div className="App">
-      <BrowserRouter
-        basename={`/resource-hub` || "" || window.location.pathname}
-      >
-        <ScrollToTop>
+    <BrowserRouter basename={`resource-hub` || "" || window.location.pathname}>
+      <ScrollToTop>
+        <div className="App">
           <Routes>
             <Route
               path="/"
@@ -75,16 +73,27 @@ function App() {
                 />
               }
             ></Route>
+            <Route
+              path="/*"
+              element={
+                <Home
+                  blogList={blogList}
+                  setBlogList={setBlogList}
+                  formValue={formValue}
+                  setFormValue={setFormValue}
+                />
+              }
+            />
           </Routes>
-        </ScrollToTop>
-      </BrowserRouter>
-      <div className="footer">
-        <p>
-          Webpage designed and developed by{" "}
-          <a href={"https://github.com/Anngineer"}>Anngineer</a>.
-        </p>
-      </div>
-    </div>
+          <div className="footer">
+            <p>
+              Webpage designed and developed by{" "}
+              <a href={"https://github.com/Anngineer"}>Anngineer</a>.
+            </p>
+          </div>
+        </div>
+      </ScrollToTop>
+    </BrowserRouter>
   );
 }
 
