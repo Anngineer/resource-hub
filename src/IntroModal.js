@@ -21,13 +21,16 @@ const IntroModal = ({
       <Modal.Header>We've picked out a blog for you!</Modal.Header>
       <Modal.Content className="ModalContent">
         {/* <Card>{dropDownValue}</Card> */}
-        <ModalCard
-          dropDownValue={dropDownValue}
-          dropDownTheme={dropDownTheme}
-        />
+        <div className="modal-cards-and-form-wrapper">
+          <ModalCard
+            dropDownValue={dropDownValue}
+            dropDownTheme={dropDownTheme}
+          />
 
-        <ModalForm dropDownValue={dropDownValue} />
+          <ModalForm dropDownValue={dropDownValue} />
+        </div>
       </Modal.Content>
+
       <Modal.Actions>
         <Button onClick={onCloseDisplayModal}>Close</Button>
       </Modal.Actions>

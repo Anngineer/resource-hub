@@ -12,9 +12,11 @@ const LandingSection = () => {
           <h1>Resource Hub</h1>
           <h2>Explore and Learn</h2>
           <p>
-            An information center for curious adults who have busy lives. Choose
-            an option for a suggestion!{" "}
+            An information center for curious adults who have busy lives.
+            Resource Hub takes the pressure (that's force per unit area) out of
+            learning STEM.{" "}
           </p>
+          <p>Choose an option for a suggestion! </p>
           <div className="dropdown-container">
             <IAmDropdown />
           </div>

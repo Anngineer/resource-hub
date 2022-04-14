@@ -127,7 +127,7 @@ h3 {
   margin-top: 5.5rem;
   h2 {
     margin: 0;
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.5rem;
     font-size: 1.3rem;
     font-style: italic;
   }
@@ -188,6 +188,24 @@ h3 {
   flex-direction: row;
   justify-content: flex-end;
   width: 100%;
+}
+.modal-cards-and-form-wrapper {
+  padding-left: 2rem;
+}
+@media (max-width: 330px) {
+  .modal-cards-and-form-wrapper {
+    padding-left: 1rem;
+  }
+}
+@media (max-width: 270px) {
+  .modal-cards-and-form-wrapper {
+    padding-left: 0rem;
+  }
+}
+@media (min-width: 1000px) {
+  .modal-cards-and-form-wrapper {
+    padding-left: 20%;
+  }
 }
 
 // The Search section with the checkboxes
