@@ -8,7 +8,7 @@ import { useState } from "react";
 const SearchForm = ({ setBlogList, setFormValue, formValue }) => {
   const tagList = createTags();
   // console.log("tagList", tagList);
-  const [formHidden, setFormHidden] = useState(true);
+  const [formHidden, setFormHidden] = useState(false);
   const handleForm = () => {
     setFormHidden(!formHidden);
   };
