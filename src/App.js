@@ -1,4 +1,4 @@
-import { BrowserRouter, Link, Route, Routes, Navigate } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import BlogsInfo from "./BlogsInfo";
 import Home from "./Home";
@@ -90,8 +90,12 @@ function App() {
           </Routes>
           <div className="footer">
             <p>
-              Webpage designed and developed by{" "}
-              <a href={"https://github.com/Anngineer"}>Anngineer</a>.
+              <p>
+                View more websites in this{" "}
+                <a href={"https://Anngineer.com/"}>portfolio</a>.<br />
+                Webpage designed and developed by{" "}
+                <a href={"https://github.com/Anngineer"}>Ann Bridge 2022</a>.
+              </p>
             </p>
           </div>
         </div>

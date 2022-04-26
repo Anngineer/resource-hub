@@ -508,6 +508,9 @@ p.blurb {
   justify-content: flex-end;
   align-items: flex-end;
   padding: 2rem;
+  p {
+    text-align: right;
+  }
   a {
     text-decoration: underline;
     color: rgba(245, 245, 245, 0.89);

@@ -555,6 +555,10 @@ p.blurb {
   padding: 2rem;
 }
 
+.footer p {
+  text-align: right;
+}
+
 .footer a {
   text-decoration: underline;
   color: rgba(245, 245, 245, 0.89);
