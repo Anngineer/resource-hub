@@ -1,5 +1,7 @@
 # resource-hub
 
+Deploy Link: [Resource Hub](https://anngineer.github.io/resource-hub/).
+
 This repository is a mock template for a resource page, use JavaScript to organize and sort informational material via tags and themes.
 
 ## Details
